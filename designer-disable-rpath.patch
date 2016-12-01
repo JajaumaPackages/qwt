@@ -1,0 +1,14 @@
+diff -uNr qwt-6.1.2.orig/designer/designer.pro qwt-6.1.2/designer/designer.pro
+--- qwt-6.1.2.orig/designer/designer.pro	2014-12-13 19:59:28.528671818 +0300
++++ qwt-6.1.2/designer/designer.pro	2014-12-13 20:29:53.446690121 +0300
+@@ -80,10 +80,6 @@
+ 
+     } else {
+ 
+-        # compile the path for finding the Qwt library
+-        # into the plugin. Not supported on Windows !
+-
+-        QMAKE_RPATHDIR *= $${QWT_INSTALL_LIBS}
+         qwtAddLibrary($${QWT_OUT_ROOT}/lib, qwt)
+ 
+         contains(QWT_CONFIG, QwtDll) {
